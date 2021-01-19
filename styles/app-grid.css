@@ -1,0 +1,23 @@
+.app-grid {
+  display: grid;
+  background: hotpink;
+  grid-template-rows: 100px auto 80px;
+  height: 100vh;
+}
+
+.app-grid__heading {
+  background: blueviolet;
+}
+
+.app-grid__header {
+  text-align: center;
+}
+
+.app-grid__content {
+  background: darkgrey;
+  overflow: auto;
+}
+
+.app-grid__navigation {
+  background: goldenrod;
+}
