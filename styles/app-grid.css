@@ -15,7 +15,7 @@
 
 .app-grid__content {
   background: darkgrey;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .app-grid__navigation {
