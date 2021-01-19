@@ -11,6 +11,7 @@
 
 .app-grid__header {
   text-align: center;
+  margin: 5px;
 }
 
 .app-grid__content {
