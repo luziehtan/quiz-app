@@ -1,12 +1,12 @@
 .app-grid {
   display: grid;
   background: hotpink;
-  grid-template-rows: 100px auto 80px;
+  grid-template-rows: 55px auto 55px;
   height: 100vh;
 }
 
 .app-grid__heading {
-  background: blueviolet;
+  background: var(--color-green);
 }
 
 .app-grid__header {
@@ -14,10 +14,10 @@
 }
 
 .app-grid__content {
-  background: darkgrey;
-  overflow: auto;
+  background: var(--color-grey);
+  overflow-y: auto;
 }
 
 .app-grid__navigation {
-  background: goldenrod;
+  background: var(--color-darkgreen);
 }

@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation__icons {
+  filter: invert(58%) sepia(17%) saturate(285%) hue-rotate(78deg)
+    brightness(93%) contrast(84%) drop-shadow(0 0 0.75rem #000);
+}
+
+.navigation a {
+  padding-top: 12px;
+}
