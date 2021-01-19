@@ -4,7 +4,7 @@
   "scripts": {
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "start": "live-server",
+    "start": "live-server --no-css-inject",
     "test": "htmlhint && prettier --check . && npm run stylelint"
   },
   "keywords": [],
