@@ -1,0 +1,14 @@
+.quiz-card {
+  background: var(--color-verylightgreen);
+  text-align: center;
+  margin: 15px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.quiz-card__question {
+  background: var(--color-lightgreen);
+  border-radius: 15px 15px 0 0;
+  padding: 3px 0;
+  font-size: 20px;
+}
