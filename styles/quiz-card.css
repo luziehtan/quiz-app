@@ -15,6 +15,14 @@
   top: -3px;
 }
 
+.quiz-card__bookmarked {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: -3px;
+}
+
 .quiz-card__question {
   background: var(--color-lightgreen);
   border-radius: 15px 15px 0 0;
