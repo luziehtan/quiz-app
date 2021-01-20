@@ -3,6 +3,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  overflow: auto;
 }
 
 .navigation__icons {
