@@ -1,10 +1,11 @@
 import '../styles/index.css'
 
 import './quiz-card.css'
-import quizcard from './quiz-card.html'
+import html from './quiz-card.html'
 
 export default {
   title: 'Quiz-Card',
+  component: html,
 }
 
-export const base = () => quiz - card
+export const base = () => html

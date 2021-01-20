@@ -1,10 +1,11 @@
 import '../styles/index.css'
 
 import './app-grid.css'
-import appgrid from './app-grid.html'
+import html from './app-grid.html'
 
 export default {
   title: 'App-Grid',
+  component: html,
 }
 
-export const base = () => app - grid
+export const base = () => html
