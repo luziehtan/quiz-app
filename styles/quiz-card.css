@@ -6,6 +6,14 @@
   padding-bottom: 10px;
 }
 
+.quiz-card__bookmark {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 35px;
+  top: 68px;
+}
+
 .quiz-card__question {
   background: var(--color-lightgreen);
   border-radius: 15px 15px 0 0;
