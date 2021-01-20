@@ -1,5 +1,3 @@
-import '../styles/index.css'
-
 import './quiz-card.css'
 import html from './quiz-card.html'
 
