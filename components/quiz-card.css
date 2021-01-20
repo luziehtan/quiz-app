@@ -23,6 +23,22 @@
   top: -3px;
 }
 
+.quiz-card__summary {
+  list-style: none;
+  background: var(--color-green);
+  margin: 0 100px;
+  padding: 2px 0;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 0.1rem #000);
+  transition: all 0.6s ease-in-out;
+}
+
+.quiz-card__summary:focus {
+  border: 5px dotted var(--color-verylightgreen);
+  filter: rop-shadow(0 0 0.1rem #000);
+  margin: 20px;
+}
+
 .quiz-card__question {
   background: var(--color-lightgreen);
   border-radius: 15px 15px 0 0;
@@ -31,7 +47,21 @@
 }
 
 .quiz-card__answer {
-  margin: 15px;
+  margin: 20px;
+  padding: 20px;
+}
+
+details {
+  transition: height 1s ease-in-out;
+  overflow-y: visible;
+}
+
+details:not([open]) {
+  height: 2em;
+}
+
+details[open] {
+  height: 8em;
 }
 
 .quiz-card__tags {
