@@ -17,6 +17,6 @@
 .quiz-card__question {
   background: var(--color-lightgreen);
   border-radius: 15px 15px 0 0;
-  padding: 3px 0;
+  padding: 30px 0;
   font-size: 20px;
 }
