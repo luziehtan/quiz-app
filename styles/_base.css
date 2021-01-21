@@ -21,10 +21,14 @@ h2 {
 }
 
 h3 {
+  display: inline-block;
   font-family: 'Fredoka One', cursive;
   font-size: 20px;
   text-align: center;
-  margin: 0;
+  margin: 5px;
+  padding: 5px 20px;
+  background: var(--color-lightgreen);
+  border-radius: 15px;
 }
 
 button {
