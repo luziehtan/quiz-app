@@ -1,0 +1,31 @@
+input[type='text'],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1.5px solid var(--color-darkgreen);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: center;
+  background: #e2e6ec;
+}
+
+input[type='submit'] {
+  background-color: var(--color-green);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-new__container {
+  border-radius: 15px;
+  background-color: #b5bfc5;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
