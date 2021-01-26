@@ -38,3 +38,8 @@ button {
 .logo {
   margin-right: 10px;
 }
+
+.active {
+  border: 5px dotted;
+  border-radius: 15px;
+}
