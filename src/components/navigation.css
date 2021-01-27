@@ -5,9 +5,9 @@
   align-items: center;
   overflow: auto;
   padding-top: 12px;
+  font-size: 35px;
 }
 
 .navigation__icons {
-  filter: invert(58%) sepia(17%) saturate(285%) hue-rotate(78deg)
-    brightness(93%) contrast(84%);
+  color: var(--color-green);
 }

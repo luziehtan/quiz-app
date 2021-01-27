@@ -40,6 +40,6 @@ button {
 }
 
 .active {
-  border: 5px dotted;
-  border-radius: 15px;
+  color: var(--color-verylightgreen) !important;
+  text-shadow: var(--color-green) 1px 0 10px;
 }
