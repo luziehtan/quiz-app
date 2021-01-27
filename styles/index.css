@@ -1,5 +1,5 @@
 @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
-@import '_base.css';
+@import './_base.css';
 @import '../components/app-grid.css';
 @import '../components/navigation.css';
 @import 'variables.css';

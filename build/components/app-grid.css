@@ -1,0 +1,25 @@
+.app-grid {
+  display: grid;
+  background: hotpink;
+  grid-template-rows: 55px auto 55px;
+  height: 100vh;
+}
+
+.app-grid__heading {
+  background-image: linear-gradient(#7e9181, #c7cedb);
+}
+
+.app-grid__header {
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  margin: 5px;
+}
+
+.app-grid__content {
+  background: var(--color-grey);
+  overflow-y: auto;
+}
+
+.app-grid__navigation {
+  background: var(--color-darkgreen);
+}
