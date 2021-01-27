@@ -8,14 +8,14 @@
 }
 
 .quiz-card__bookmark {
-  font-size: 30px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 20px;
   top: -3px;
 }
 
 .quiz-card__bookmarked {
-  font-size: 30px;
   width: 30px;
   height: 30px;
   position: absolute;
