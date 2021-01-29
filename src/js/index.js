@@ -13,6 +13,13 @@ const bookmarks = document.querySelectorAll('[data-js="bookmark-icon"]')
 
 // navigation
 
+const labels = document.querySelectorAll('[data-js="label"]')
+
+const form = getElement('formular')
+const textarea = getElement('textarea')
+const counter = getElement('counter')
+const buttonSubmit = getElement('button')
+
 iconHome.addEventListener('click', () => {
   index.hidden = false
   bookmark.hidden = true
@@ -48,10 +55,36 @@ iconCreate.addEventListener('click', () => {
 bookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
     bookmark.classList.toggle('fa')
-    console.log('Button was clicked')
   })
 })
 
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
+
+// formular
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  form.reset()
+  textarea.focus()
+})
+
+// counter
+
+labels.forEach(label => {
+  const textInput = label.querySelector('[data-js="textarea"]')
+  textInput.addEventListener('input', event => {
+    const counterContent = label.querySelector('[data-js="counter"]')
+    counterContent.textContent = `${event.currentTarget.value.length}/300`
+  })
+})
+
+/*counters.forEach(counter => {
+  const textarea = document.querySelector('[data-js="textarea"]')
+  const counter = document.querySelector('[data-js="counter"]')
+})
+
+textarea.addEventListener('input', event => {
+  counter.textContent = `${event.currentTarget.value.length}/300`
+})*/

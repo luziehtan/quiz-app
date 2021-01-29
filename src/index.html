@@ -169,29 +169,38 @@
       <section hidden data-js="createNew">
         <div class="create-new">
           <h2>Add new question:</h2>
-          <form class="create-new__container">
-            <h3>Question</h3>
-            <input
-              type="text"
-              name="question"
-              placeholder="Enter your new question"
-            />
+          <form class="create-new__container" data-js="formular">
+            <label class="create-new__container--label" data-js="label">
+              <span class="create-new__container--heading">Question</span><br />
+              <textarea
+                maxlength="300"
+                placeholder="Enter your new question"
+                data-js="textarea"
+              ></textarea
+              ><span class="counter" data-js="counter">0/300</span>
+            </label>
 
-            <h3>Answer</h3>
-            <input
-              type="text"
-              name="answer"
-              placeholder="Enter the answer to the question"
-            />
+            <label class="create-new__container--label" data-js="label">
+              <span class="create-new__container--heading">Answer</span><br />
+              <textarea
+                maxlength="300"
+                placeholder="Enter the answer to the question"
+                data-js="textarea"
+              ></textarea
+              ><span class="counter" data-js="counter">0/300</span>
+            </label>
 
-            <h3>Tags</h3>
-            <input
-              type="text"
-              name="tags"
-              placeholder="Enter tags divided by comma"
-            />
-            <br />
-            <button type="button" data-js="buttonSubmit">Submit</button>
+            <label class="create-new__container--label" data-js="label">
+              <span class="create-new__container--heading">Tags</span><br />
+              <textarea
+                maxlength="300"
+                placeholder="Enter tags divided by comma"
+                data-js="textarea"
+              ></textarea
+              ><span class="counter" data-js="counter">0/300</span>
+            </label>
+
+            <button type="submit" data-js="buttonSubmit">Submit</button>
           </form>
         </div>
       </section>
