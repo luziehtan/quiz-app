@@ -13,6 +13,8 @@
     <script defer type="module" src="./js/index.js"></script>
   </head>
   <body class="app-grid">
+    <!-- HEADER -->
+
     <header class="app-grid__heading">
       <h1 class="app-grid__header">
         <img
@@ -23,13 +25,22 @@
         />Quizooo
       </h1>
     </header>
+
+    <!-- APP CONTENT -->
+
     <main class="app-grid__content">
+      <!-- Dashboard Questions  -->
+
       <section data-js="index">
         <section class="quiz-card">
           <h2 class="quiz-card__question">
             What is always coming but never arrives?
           </h2>
-          <span class="far fa-bookmark quiz-card__bookmark" role="button">
+          <span
+            class="far fa-bookmark quiz-card__bookmark"
+            role="button"
+            data-js="bookmark-icon"
+          >
           </span>
           <details>
             <summary class="quiz-card__summary">Show answer</summary>
@@ -45,7 +56,11 @@
           <h2 class="quiz-card__question">
             What can one catch that is not thrown?
           </h2>
-          <span class="far fa-bookmark quiz-card__bookmark" role="button">
+          <span
+            class="far fa-bookmark quiz-card__bookmark"
+            role="button"
+            data-js="bookmark-icon"
+          >
           </span>
           <details>
             <summary class="quiz-card__summary">Show answer</summary>
@@ -62,7 +77,11 @@
           <h2 class="quiz-card__question">
             What is it that goes up but never comes down?
           </h2>
-          <span class="far fa-bookmark quiz-card__bookmark" role="button">
+          <span
+            class="far fa-bookmark quiz-card__bookmark"
+            role="button"
+            data-js="bookmark-icon"
+          >
           </span>
           <details>
             <summary class="quiz-card__summary">Show answer</summary>
@@ -77,12 +96,18 @@
         </section>
       </section>
 
+      <!-- Bookmarked Questions -->
+
       <section hidden data-js="bookmark">
         <section class="quiz-card">
           <h2 class="quiz-card__question">
             What is always coming but never arrives?
           </h2>
-          <span class="fas fa-bookmark quiz-card__bookmark" role="button">
+          <span
+            class="fas fa-bookmark quiz-card__bookmark"
+            role="button"
+            data-js="bookmark-icon"
+          >
           </span>
           <details>
             <summary>Show answer</summary>
@@ -99,7 +124,11 @@
           <h2 class="quiz-card__question">
             What can one catch that is not thrown?
           </h2>
-          <span class="fas fa-bookmark quiz-card__bookmark" role="button">
+          <span
+            class="fas fa-bookmark quiz-card__bookmark"
+            role="button"
+            data-js="bookmark-icon"
+          >
           </span>
           <details>
             <summary>Show answer</summary>
@@ -116,7 +145,11 @@
           <h2 class="quiz-card__question">
             What is it that goes up but never comes down?
           </h2>
-          <span class="fas fa-bookmark quiz-card__bookmark" role="button">
+          <span
+            class="fas fa-bookmark quiz-card__bookmark"
+            role="button"
+            data-js="bookmark-icon"
+          >
           </span>
           <details>
             <summary>Show answer</summary>
@@ -130,6 +163,9 @@
           </div>
         </section>
       </section>
+
+      <!-- Create new -->
+
       <section hidden data-js="createNew">
         <div class="create-new">
           <h2>Add new question:</h2>
@@ -162,12 +198,19 @@
             /></label>
 
             <br />
+<<<<<<< HEAD
 
             <button type="button" data-js="buttonSubmit">Submit</button>>
+=======
+            <button type="button" data-js="buttonSubmit">Submit</button>
+>>>>>>> main
           </form>
         </div>
       </section>
     </main>
+
+    <!-- NAVIGATION -->
+
     <nav class="app-grid__navigation navigation">
       <div>
         <span

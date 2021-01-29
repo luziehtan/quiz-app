@@ -1,13 +1,17 @@
 console.clear()
 console.log('Hello world')
 
-const index = document.querySelector('[data-js=index]')
-const bookmark = document.querySelector('[data-js=bookmark]')
-const createNew = document.querySelector('[data-js=createNew]')
+const index = getElement('index')
+const bookmark = getElement('bookmark')
+const createNew = getElement('createNew')
 
-const iconHome = document.querySelector('[data-js=iconHome]')
-const iconBookmark = document.querySelector('[data-js=iconBookmark]')
-const iconCreate = document.querySelector('[data-js=iconCreate]')
+const iconHome = getElement('iconHome')
+const iconBookmark = getElement('iconBookmark')
+const iconCreate = getElement('iconCreate')
+
+const bookmarks = document.querySelectorAll('[data-js="bookmark-icon"]')
+
+// navigation
 
 const form = getElement('formular')
 const inputQuestion = getElement('question')
@@ -45,6 +49,19 @@ iconCreate.addEventListener('click', () => {
   iconBookmark.classList.remove('active')
   iconCreate.classList.add('active')
 })
+
+// bookmark toggle
+
+bookmarks.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('fa')
+    console.log('Button was clicked')
+  })
+})
+
+function getElement(dataJsName) {
+  return document.querySelector(`[data-js="${dataJsName}"]`)
+}
 
 // formular
 
