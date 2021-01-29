@@ -28,4 +28,5 @@ input[type='submit'] {
   padding: 20px;
   margin: 20px;
   text-align: center;
+  border: 1px solid var(--color-green);
 }
