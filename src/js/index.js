@@ -9,6 +9,13 @@ const iconHome = document.querySelector('[data-js=iconHome]')
 const iconBookmark = document.querySelector('[data-js=iconBookmark]')
 const iconCreate = document.querySelector('[data-js=iconCreate]')
 
+const form = getElement('formular')
+const inputQuestion = getElement('question')
+const inputAnswer = getElement('answer')
+const inputTags = getElement('tags')
+const counter = getElement('counter')
+const buttonSubmit = getElement('button')
+
 iconHome.addEventListener('click', () => {
   index.hidden = false
   bookmark.hidden = true
@@ -37,4 +44,24 @@ iconCreate.addEventListener('click', () => {
   iconHome.classList.remove('active')
   iconBookmark.classList.remove('active')
   iconCreate.classList.add('active')
+})
+
+// formular
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  console.log(event)
+  form(reset)
+  inputQuestion.focus()
+  inputAnswer.focus()
+  inputTags.focus()
+})
+
+counter.forEach(counter => {
+  const textarea = document.querySelector('[data-js="textarea"]')
+  const counter = document.querySelector('[data-js="counter"]')
+})
+
+textarea.addEventListener('input', event => {
+  counter.textContent = `${event.currentTarget.value.length}/300`
 })

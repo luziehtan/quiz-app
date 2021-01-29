@@ -133,29 +133,37 @@
       <section hidden data-js="createNew">
         <div class="create-new">
           <h2>Add new question:</h2>
-          <form class="create-new__container">
-            <h3>Question</h3>
-            <input
-              type="text"
-              name="question"
-              placeholder="Enter your new question"
-            />
+          <form class="create-new__container" data-js="formular">
+            <label data-js="counter"
+              ><h3>Question</h3>
+              <input
+                type="textarea"
+                name="question"
+                placeholder="Enter your new question"
+                data-js="textarea"
+            /></label>
 
-            <h3>Answer</h3>
-            <input
-              type="text"
-              name="answer"
-              placeholder="Enter the answer to the question"
-            />
+            <label data-js="counter"
+              ><h3>Answer</h3>
+              <input
+                type="textarea"
+                name="answer"
+                placeholder="Enter the answer to the question"
+                data-js="textarea"
+            /></label>
 
-            <h3>Tags</h3>
-            <input
-              type="text"
-              name="tags"
-              placeholder="Enter tags divided by comma"
-            />
+            <label data-js="counter"
+              ><h3>Tags</h3>
+              <input
+                type="textarea"
+                name="tags"
+                placeholder="Enter tags divided by comma"
+                data-js="textarea"
+            /></label>
+
             <br />
-            <input type="submit" value="Submit" />
+
+            <button type="button" data-js="buttonSubmit">Submit</button>>
           </form>
         </div>
       </section>

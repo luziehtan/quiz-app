@@ -1,5 +1,6 @@
 .app-grid {
   display: inline-block;
+  width: 100vw;
 }
 
 .app-grid__heading {
