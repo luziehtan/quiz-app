@@ -73,11 +73,11 @@ form.addEventListener('submit', event => {
   inputTags.focus()
 })
 
-counter.forEach(counter => {
+/*counters.forEach(counter => {
   const textarea = document.querySelector('[data-js="textarea"]')
   const counter = document.querySelector('[data-js="counter"]')
 })
 
 textarea.addEventListener('input', event => {
   counter.textContent = `${event.currentTarget.value.length}/300`
-})
+})*/
