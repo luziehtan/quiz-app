@@ -170,36 +170,37 @@
         <div class="create-new">
           <h2>Add new question:</h2>
           <form class="create-new__container" data-js="formular">
-            <label data-js="counter"
-              ><h3>Question</h3>
-              <input
-                type="textarea"
-                name="question"
+            <label class="create-new__container--label" data-js="label">
+              <span class="create-new__container--heading">Question</span><br />
+              <textarea
+                maxlength="300"
                 placeholder="Enter your new question"
                 data-js="textarea"
-            /></label>
+              ></textarea
+              ><span class="counter" data-js="counter">0/300</span>
+            </label>
 
-            <label data-js="counter"
-              ><h3>Answer</h3>
-              <input
-                type="textarea"
-                name="answer"
+            <label class="create-new__container--label" data-js="label">
+              <span class="create-new__container--heading">Answer</span><br />
+              <textarea
+                maxlength="300"
                 placeholder="Enter the answer to the question"
                 data-js="textarea"
-            /></label>
+              ></textarea
+              ><span class="counter" data-js="counter">0/300</span>
+            </label>
 
-            <label data-js="counter"
-              ><h3>Tags</h3>
-              <input
-                type="textarea"
-                name="tags"
+            <label class="create-new__container--label" data-js="label">
+              <span class="create-new__container--heading">Tags</span><br />
+              <textarea
+                maxlength="300"
                 placeholder="Enter tags divided by comma"
                 data-js="textarea"
-            /></label>
+              ></textarea
+              ><span class="counter" data-js="counter">0/300</span>
+            </label>
 
-            <br />
-
-            <button type="button" data-js="buttonSubmit">Submit</button>>
+            <button type="submit" data-js="buttonSubmit">Submit</button>
           </form>
         </div>
       </section>

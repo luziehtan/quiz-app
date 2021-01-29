@@ -13,10 +13,10 @@ const bookmarks = document.querySelectorAll('[data-js="bookmark-icon"]')
 
 // navigation
 
+const labels = document.querySelectorAll('[data-js="label"]')
+
 const form = getElement('formular')
-const inputQuestion = getElement('question')
-const inputAnswer = getElement('answer')
-const inputTags = getElement('tags')
+const textarea = getElement('textarea')
 const counter = getElement('counter')
 const buttonSubmit = getElement('button')
 
@@ -66,11 +66,18 @@ function getElement(dataJsName) {
 
 form.addEventListener('submit', event => {
   event.preventDefault()
-  console.log(event)
-  form(reset)
-  inputQuestion.focus()
-  inputAnswer.focus()
-  inputTags.focus()
+  form.reset()
+  textarea.focus()
+})
+
+// counter
+
+labels.forEach(label => {
+  const textInput = label.querySelector('[data-js="textarea"]')
+  textInput.addEventListener('input', event => {
+    const counterContent = label.querySelector('[data-js="counter"]')
+    counterContent.textContent = `${event.currentTarget.value.length}/300`
+  })
 })
 
 /*counters.forEach(counter => {
