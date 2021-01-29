@@ -55,7 +55,6 @@ iconCreate.addEventListener('click', () => {
 bookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
     bookmark.classList.toggle('fa')
-    console.log('Button was clicked')
   })
 })
 
