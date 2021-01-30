@@ -1,6 +1,8 @@
 console.clear()
 console.log('Hello world')
 
+// navigation const
+
 const index = getElement('index')
 const bookmark = getElement('bookmark')
 const createNew = getElement('createNew')
@@ -9,9 +11,11 @@ const iconHome = getElement('iconHome')
 const iconBookmark = getElement('iconBookmark')
 const iconCreate = getElement('iconCreate')
 
+// bookmark toggle const
+
 const bookmarks = document.querySelectorAll('[data-js="bookmark-icon"]')
 
-// navigation
+// formular const
 
 const labels = document.querySelectorAll('[data-js="label"]')
 
@@ -19,6 +23,17 @@ const form = getElement('formular')
 const textarea = getElement('textarea')
 const counter = getElement('counter')
 const buttonSubmit = getElement('button')
+
+// quiz-card const
+
+const answers = document.querySelectorAll('[data-js="quiz-card-answer"]')
+
+const buttonQuiz = document.querySelector('[data-js="quiz-card-button"]')
+const answer = document.querySelector('[data-js="quiz-card-answer"]')
+
+let shown = false
+
+// NAVIGATION
 
 iconHome.addEventListener('click', () => {
   index.hidden = false
@@ -80,11 +95,20 @@ labels.forEach(label => {
   })
 })
 
-/*counters.forEach(counter => {
-  const textarea = document.querySelector('[data-js="textarea"]')
-  const counter = document.querySelector('[data-js="counter"]')
-})
+// quiz card answer toggle
 
-textarea.addEventListener('input', event => {
-  counter.textContent = `${event.currentTarget.value.length}/300`
-})*/
+function toggleText() {
+  if (shown) {
+    buttonQuiz.innerText = 'Show Answer'
+    answer.style.display = 'none'
+  } else {
+    buttonQuiz.innerText = 'Hide Answer'
+    answer.style.display = 'block'
+  }
+
+  shown = !shown
+}
+
+buttonQuiz.addEventListener('click', () => {
+  toggleText()
+})

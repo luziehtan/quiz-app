@@ -33,22 +33,6 @@
   top: -3px;
 }
 
-.quiz-card__summary {
-  list-style: none;
-  background: var(--color-green);
-  margin: 0 100px;
-  padding: 2px 0;
-  border-radius: 15px;
-  filter: drop-shadow(0 0 0.1rem #000);
-  transition: all 0.6s ease-in-out;
-}
-
-.quiz-card__summary:focus {
-  border: 5px dotted var(--color-verylightgreen);
-  filter: drop-shadow(0 0 0.1rem #000);
-  margin: 20px;
-}
-
 .quiz-card__question {
   background: var(--color-lightgreen);
   border-radius: 15px 15px 0 0;
@@ -56,22 +40,34 @@
   font-size: 20px;
 }
 
+.quiz-card__button {
+  border: none;
+  filter: drop-shadow(0 0 0.3rem var(--color-darkgreen));
+  padding: 15px;
+  background: var(--color-green);
+  border-radius: 15px;
+  font-family: 'Fredoka One', cursive;
+  color: var(--color-darkgreen);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* just for websites, not for apps
+
+.quiz-card__button:hover {
+  border: 1.5px dotted var(--color-darkgreen);
+} 
+
+*/
+
 .quiz-card__answer {
-  margin: 20px;
-  padding: 20px;
-}
-
-details {
-  transition: height 1s ease-in-out;
-  overflow-y: visible;
-}
-
-details:not([open]) {
-  height: 2em;
-}
-
-details[open] {
-  height: 8em;
+  display: none;
+  margin: 10px;
+  background: var(--color-lightgreen);
+  border: 2px dotted var(--color-darkgreen);
+  border-radius: 15px;
+  padding: 12px;
 }
 
 .quiz-card__tags {

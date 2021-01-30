@@ -34,8 +34,3 @@ form {
 .logo {
   margin-right: 10px;
 }
-
-.active {
-  color: var(--color-verylightgreen) !important;
-  text-shadow: var(--color-green) 1px 0 10px;
-}
