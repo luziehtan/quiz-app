@@ -26,10 +26,7 @@ const buttonSubmit = getElement('button')
 
 // quiz-card const
 
-const answers = document.querySelectorAll('[data-js="quiz-card-answer"]')
-
-const buttonQuiz = document.querySelector('[data-js="quiz-card-button"]')
-const answer = document.querySelector('[data-js="quiz-card-answer"]')
+const cards = document.querySelectorAll('[data-js="quiz-card"]')
 
 let shown = false
 
@@ -97,18 +94,23 @@ labels.forEach(label => {
 
 // quiz card answer toggle
 
-function toggleText() {
+function toggleText(button, answer) {
   if (shown) {
-    buttonQuiz.innerText = 'Show Answer'
+    button.innerText = 'Show Answer'
     answer.style.display = 'none'
   } else {
-    buttonQuiz.innerText = 'Hide Answer'
+    button.innerText = 'Hide Answer'
     answer.style.display = 'block'
   }
 
   shown = !shown
 }
 
-buttonQuiz.addEventListener('click', () => {
-  toggleText()
+cards.forEach(card => {
+  const answer = card.querySelector('[data-js="quiz-card-answer"]')
+  const button = card.querySelector('[data-js="quiz-card-button"]')
+
+  button.addEventListener('click', () => {
+    toggleText(button, answer)
+  })
 })
