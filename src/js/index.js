@@ -1,34 +1,29 @@
-console.clear()
-console.log('Hello world')
-
 // navigation const
 
-const index = getElement('index')
-const bookmark = getElement('bookmark')
-const createNew = getElement('createNew')
+const index = getByDataJs('index')
+const bookmark = getByDataJs('bookmark')
+const createNew = getByDataJs('createNew')
 
-const iconHome = getElement('iconHome')
-const iconBookmark = getElement('iconBookmark')
-const iconCreate = getElement('iconCreate')
+const iconHome = getByDataJs('iconHome')
+const iconBookmark = getByDataJs('iconBookmark')
+const iconCreate = getByDataJs('iconCreate')
 
 // bookmark toggle const
 
-const bookmarks = document.querySelectorAll('[data-js="bookmark-icon"]')
+const bookmarks = getAllByDataJs('bookmark-icon')
 
 // formular const
 
-const labels = document.querySelectorAll('[data-js="label"]')
+const labels = getAllByDataJs('label')
 
-const form = getElement('formular')
-const textarea = getElement('textarea')
-const counter = getElement('counter')
-const buttonSubmit = getElement('button')
+const form = getByDataJs('formular')
+const textarea = getByDataJs('textarea')
+const counter = getByDataJs('counter')
+const buttonSubmit = getByDataJs('button')
 
 // quiz-card const
 
-const cards = document.querySelectorAll('[data-js="quiz-card"]')
-
-let shown = false
+const cards = getAllByDataJs('quiz-card')
 
 // NAVIGATION
 
@@ -70,10 +65,6 @@ bookmarks.forEach(bookmark => {
   })
 })
 
-function getElement(dataJsName) {
-  return document.querySelector(`[data-js="${dataJsName}"]`)
-}
-
 // formular
 
 form.addEventListener('submit', event => {
@@ -85,9 +76,9 @@ form.addEventListener('submit', event => {
 // counter
 
 labels.forEach(label => {
-  const textInput = label.querySelector('[data-js="textarea"]')
+  const textInput = getByDataJs('textarea', label)
   textInput.addEventListener('input', event => {
-    const counterContent = label.querySelector('[data-js="counter"]')
+    const counterContent = getByDataJs('counter', label)
     counterContent.textContent = `${event.currentTarget.value.length}/300`
   })
 })
@@ -95,22 +86,30 @@ labels.forEach(label => {
 // quiz card answer toggle
 
 function toggleText(button, answer) {
-  if (shown) {
+  if (button.innerText === 'Hide Answer') {
     button.innerText = 'Show Answer'
     answer.style.display = 'none'
   } else {
     button.innerText = 'Hide Answer'
     answer.style.display = 'block'
   }
-
-  shown = !shown
 }
 
 cards.forEach(card => {
-  const answer = card.querySelector('[data-js="quiz-card-answer"]')
-  const button = card.querySelector('[data-js="quiz-card-button"]')
+  const answer = getByDataJs('quiz-card-answer', card)
+  const button = getByDataJs('quiz-card-button', card)
 
   button.addEventListener('click', () => {
     toggleText(button, answer)
   })
 })
+
+// general function
+
+function getByDataJs(dataJsName, target = document) {
+  return target.querySelector(`[data-js="${dataJsName}"]`)
+}
+
+function getAllByDataJs(dataJsName, target = document) {
+  return target.querySelectorAll(`[data-js="${dataJsName}"]`)
+}
