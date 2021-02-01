@@ -8,6 +8,7 @@
 }
 
 .navigation__icons {
-  filter: invert(58%) sepia(17%) saturate(285%) hue-rotate(78deg)
+  filter:
+  invert(58%) sepia(17%) saturate(285%) hue-rotate(78deg)
     brightness(93%) contrast(84%);
 }
