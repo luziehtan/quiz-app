@@ -6,8 +6,6 @@ export default function formular() {
 
   const form = getByDataJs('formular')
   const textarea = getByDataJs('textarea')
-  const counter = getByDataJs('counter')
-  const buttonSubmit = getByDataJs('button')
 
   form.addEventListener('submit', event => {
     event.preventDefault()

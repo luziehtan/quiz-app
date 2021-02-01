@@ -55,14 +55,6 @@
   margin-bottom: 10px;
 }
 
-/* just for websites, not for apps
-
-.quiz-card__button:hover {
-  border: 1.5px dotted var(--color-darkgreen);
-} 
-
-*/
-
 .quiz-card__answer {
   display: none;
   margin: 10px;
