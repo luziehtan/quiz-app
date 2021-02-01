@@ -33,4 +33,7 @@ form {
 
 .lightbulb {
   margin-right: 10px;
+  margin-left: 10px;
+  color: var(--color-darkgreen);
+  text-shadow: var(--color-grey) 1px 0 10px;
 }
