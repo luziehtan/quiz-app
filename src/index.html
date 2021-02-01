@@ -34,7 +34,7 @@
     <main class="app-grid__content">
       <!-- Dashboard Questions  -->
 
-      <section data-js="index">
+      <section data-js="page" data-name="home">
         <section class="quiz-card" data-js="quiz-card">
           <h2 class="quiz-card__question">
             What is always coming but never arrives?
@@ -101,7 +101,7 @@
 
       <!-- Bookmarked Questions -->
 
-      <section hidden data-js="bookmark">
+      <section class="hidden" data-js="page" data-name="bookmark">
         <section class="quiz-card" data-js="quiz-card">
           <h2 class="quiz-card__question">
             What is always coming but never arrives?
@@ -171,7 +171,7 @@
 
       <!-- Create new -->
 
-      <section hidden data-js="createNew">
+      <section class="hidden" data-js="page" data-name="create">
         <div class="create-new">
           <h2>Add new question:</h2>
           <form class="create-new__container" data-js="formular">
@@ -218,28 +218,32 @@
         <span
           class="navigation__icons active fab fa-fort-awesome"
           role="button"
-          data-js="iconHome"
+          data-js="nav"
+          data-name="home"
         ></span>
       </div>
       <div>
         <span
           class="navigation__icons fas fa-bookmark"
           role="button"
-          data-js="iconBookmark"
+          data-js="nav"
+          data-name="bookmark"
         ></span>
       </div>
       <div>
         <span
           class="navigation__icons fas fa-plus"
           role="button"
-          data-js="iconCreate"
+          data-js="nav"
+          data-name="create"
         ></span>
       </div>
       <div>
         <span
           class="navigation__icons fas fa-sliders-h"
           role="button"
-          data-js="iconSettings"
+          data-js="nav"
+          data-name="settings"
         ></span>
       </div>
     </nav>

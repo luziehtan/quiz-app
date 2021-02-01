@@ -37,3 +37,7 @@ form {
   color: var(--color-darkgreen);
   text-shadow: var(--color-grey) 1px 0 10px;
 }
+
+.hidden {
+  display: none;
+}
