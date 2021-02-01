@@ -83,7 +83,7 @@ labels.forEach(label => {
   })
 })
 
-// quiz card answer toggle
+// quiz card answer toggle -- does open but not close
 
 function toggleText(button, answer) {
   if (button.innerText === 'Hide Answer') {
