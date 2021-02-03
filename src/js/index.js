@@ -21,6 +21,7 @@ buttonRandom.addEventListener('click', () => {
     const isCardSelected = index === randomIndex
     question.classList.toggle('selected', isCardSelected)
     console.log('button clicked')
+    question.focus()
   })
 })
 
