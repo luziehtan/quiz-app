@@ -17,12 +17,6 @@
 
     <header class="app-grid__heading">
       <h1 class="app-grid__header">
-        <!-- <img
-          class="logo"
-          src="./lightbulb-regular.svg"
-          width="30"
-          height="30"
-        /> -->
         <span class="far fa-lightbulb fa-spin lightbulb"></span>
         Quizooo
         <span class="far fa-lightbulb fa-spin lightbulb"></span>
@@ -35,7 +29,12 @@
       <!-- Dashboard Questions  -->
 
       <section data-js="page" data-name="home">
-        <section class="quiz-card" data-js="quiz-card">
+        <div class="quiz-card__random">
+          <button class="quiz-card__random--button" data-js="randomButton">
+            Random Question
+          </button>
+        </div>
+        <section class="quiz-card" data-js="quiz-card" data-random="quiz-card">
           <h2 class="quiz-card__question">
             What is always coming but never arrives?
           </h2>
@@ -55,7 +54,7 @@
             <button>#laugh</button>
           </div>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card" data-js="quiz-card" data-random="quiz-card">
           <h2 class="quiz-card__question">
             What can one catch that is not thrown?
           </h2>
@@ -76,7 +75,7 @@
             <button>Tag 4</button>
           </div>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card" data-js="quiz-card" data-random="quiz-card">
           <h2 class="quiz-card__question">
             What is it that goes up but never comes down?
           </h2>

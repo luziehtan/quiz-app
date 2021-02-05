@@ -9,6 +9,24 @@
   position: relative;
 }
 
+.quiz-card__random {
+  position: relative;
+  text-align: center;
+}
+
+.quiz-card__random--button {
+  border: none;
+  filter: drop-shadow(0 0 0.3rem var(--color-darkgreen));
+  padding: 15px 35px;
+  background: var(--color-verylightgreen);
+  border-radius: 15px;
+  font-family: 'Fredoka One', cursive;
+  color: var(--color-darkgreen);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
 .quiz-card:first-child {
   margin-top: 70px;
 }
@@ -66,4 +84,8 @@
 
 .quiz-card__tags {
   margin: 5px;
+}
+
+.selected {
+  border: 10px solid var(--color-darkgreen);
 }
