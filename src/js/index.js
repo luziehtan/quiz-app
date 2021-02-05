@@ -10,7 +10,7 @@ quizCardAnswer()
 
 // IDEA: randomizer button for random question
 
-const quizCards = document.querySelectorAll('[data-js=quiz-card]')
+const quizCards = document.querySelectorAll('[data-random=quiz-card]')
 const buttonRandom = document.querySelector('[data-js=randomButton]')
 const number = quizCards.length
 
@@ -20,7 +20,6 @@ buttonRandom.addEventListener('click', () => {
     const isCardSelected = index === randomIndex
     question.classList.toggle('selected', isCardSelected)
     console.log('button clicked')
-    question.focus()
   })
 })
 
