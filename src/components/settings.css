@@ -2,6 +2,14 @@
   margin-top: 70px;
 }
 
+.settings__text {
+  background: var(--color-verylightgreen);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+  font-size: 14px;
+}
+
 .settings__darkmode {
   text-align: center;
 }

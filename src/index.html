@@ -12,7 +12,7 @@
     />
     <script defer type="module" src="./js/index.js"></script>
   </head>
-  <body class="app-grid">
+  <body class="app-grid" data-js="body">
     <!-- HEADER -->
 
     <header class="app-grid__heading">
@@ -216,10 +216,15 @@
       <section class="hidden" data-js="page" data-name="settings">
         <h2 class="settings__heading">Dark Mode</h2>
         <div class="settings__darkmode">
-          <label class="switch">
+          <label class="switch" data-js="lightswitch">
             <input type="checkbox" />
             <span class="slider round"></span>
           </label>
+          <h2 class="settings__heading">Disclaimer</h2>
+          <p class="settings__text">
+            All icons used in this app have been integrated thanks to
+            <a href="https://fontawesome.com/">Fontawesome</a>! Thank you!
+          </p>
         </div>
       </section>
     </main>

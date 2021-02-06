@@ -8,14 +8,14 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
   text-align: left;
-  background: #e2e6ec;
+  background: var(--color-white);
   font-family: sans-serif;
   font-size: 12px;
 }
 
 button[type='submit'] {
-  background-color: var(--color-green);
-  color: #fff;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
   padding: 12px 20px;
   margin-top: 20px;
   border: none;
@@ -30,11 +30,11 @@ button[type='submit'] {
 
 .create-new__container {
   border-radius: 15px;
-  background-color: #b5bfc5;
+  background-color: var(--color-verylightgreen);
   padding: 20px;
   margin: 20px;
   text-align: center;
-  border: 1px solid var(--color-green);
+  border: 1px solid var(--color-secondary);
 }
 
 .create-new__container--label {
