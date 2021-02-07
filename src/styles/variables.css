@@ -8,7 +8,7 @@
   --color-font: #191d1b;
 }
 
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --color-darkgreen: #2e3532;
   --color-secondary: #56635a;
   --color-lightgreen: #91a198;
@@ -16,4 +16,14 @@
   --color-primary: #121113;
   --color-white: #e2e6ec;
   --color-font: #292f2d;
+} */
+
+[data-theme='dark'] {
+  --color-darkgreen: #000;
+  --color-secondary: #7e9181;
+  --color-lightgreen: #292f2d;
+  --color-verylightgreen: #424c46;
+  --color-primary: #121113;
+  --color-white: #e2e6ec;
+  --color-font: #e2e6ec;
 }
